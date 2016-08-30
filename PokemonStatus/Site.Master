@@ -54,6 +54,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/SkillsRanking">Skills Ranking</a></li>
                         <%--<li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>--%>
                     </ul>
@@ -62,6 +63,7 @@
         </div>
         <div class="container body-content p-t-md">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <iframe id="Defib" src="Default.aspx" frameborder="0" width="0" height="0" runat="server"></iframe>
             </asp:ContentPlaceHolder>
         </div>
 

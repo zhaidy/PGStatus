@@ -15,7 +15,7 @@
     <RootNamespace>PokemonStatus</RootNamespace>
     <AssemblyName>PokemonStatus</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -144,6 +144,9 @@
     <Content Include="Images\718257.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\PG Defense.jpg" />
+    <Content Include="Images\PG DPS.jpg" />
+    <Content Include="Images\PG Duel.jpg" />
     <Content Include="Images\pok-1200.jpg" />
     <Content Include="less\bootstrap\alerts.less" />
     <Content Include="less\bootstrap\badges.less" />
@@ -303,6 +306,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="SkillsRanking.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
@@ -354,6 +358,13 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="SkillsRanking.aspx.cs">
+      <DependentUpon>SkillsRanking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillsRanking.aspx.designer.cs">
+      <DependentUpon>SkillsRanking.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
@@ -371,7 +382,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50373</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/PokemonStatus</IISUrl>
+          <IISUrl>http://localhost:50373/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

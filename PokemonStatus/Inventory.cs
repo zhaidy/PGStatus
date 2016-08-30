@@ -54,10 +54,16 @@ namespace PokemonStatus
                     .Where(p => p != null && p.PokemonId > 0);
         }
 
-
         public async Task rename(ulong pokemonId, string nickName)
         {
+            await Task.Delay(500);
             await _client.Inventory.NicknamePokemon(pokemonId, nickName);
+        }
+
+        public async Task transfer(ulong pokemonId)
+        {
+            await Task.Delay(500);
+            await _client.Inventory.TransferPokemon(pokemonId);
         }
 
     }
